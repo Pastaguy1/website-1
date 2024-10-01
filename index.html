@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persoonlijke website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi <span> this is </span><br> about mustangs</h1>
+        </div>
+    </div>  
+</div>  
+<!---------------about-----------------> 
+<div id="about">
+    <div class="container"> 
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/2023-Ford-Mustang-Mach-1-6M-42.avif">
+            </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About mustangs</h1>
+                    <p>The Ford Mustang is a series of American automobiles manufactured by Ford.
+                     In continuous production since 1964, the Mustang is currently the longest-produced Ford car nameplate. 
+                     Currently in its seventh generation, it is the fifth-best selling Ford car nameplate. 
+                     The namesake of the "pony car" automobile segment, the Mustang was developed as a highly styled line of sporty coupes and convertibles derived from existing model lines, 
+                     initially distinguished by "long hood, short deck" proportions.</p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Power')">Power</p>
+                        <p class="tab-links" onclick="opentab('Models')">Models</p>
+                        <p class="tab-links" onclick="opentab('Engine')" >Engine</p>
+                     </div>
+                     <div class="tab-contents active-tab" id=" Power">
+                        <ul>
+                            <li><span>Power of a mustang</span><br>760 pk</li>
+                            <li><span>De mustang gt500 2020</span><br> De Shelby GT500 produces 760 hp  (567 kW, 771 pk) en 625 lb⋅ft (847 N⋅m) koppel.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Models">
+                        <ul>
+                            <li><span>2023 model</span><br>760 pk</li>
+                            <li><span>De mustang GT500 2023</span><br>Its uniquely engineered new fourth-generation Coyote 5.0-liter V8 engine makes 500-horsepower and 418 pound-feet of torque.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Models">
+                        <ul>
+                            <li><span>Engine</span><br>V8 5.0 -liter</li>
+                            <li><span>Mustang 2023 V8 5.0 liter engine</span><br>It is powered by a hand-built 5.2-liter "Predator" aluminum-alloy V8 engine with a 2.65-liter roots-type supercharger. The Shelby GT500 produces 760 hp</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!---------services----------->
+<div id="Learn more">
+    <div class="container">
+        <h1 class="sub-title">Learn more</h1>
+        <div class="services-list">
+            <div>
+                <h2>Wikipedia</h2>
+                <p></p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+    }
+        for(tabcontents of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+        }
+        event.currentTarget.classlist.add("active-link");
+        document.getElementbyId(tabname).classlist.add("active-tab");
+        
+
+</script>
+
+</body>
+</html>
